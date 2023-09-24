@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0; 
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#131418; 
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family: 'poppins', sans-serif;
+}
+
+.btn{
+all:unset;
+position:relative;
+padding:15px 40px;
+background:#232323;
+border-radius:30px;
+color:grey;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:5px;
+cursor:pointer;
+overflow:hidden;
+user-select:none;
+font-size:1.05em;
+}
+
+.btn:hover{
+color:white;        
+}
+
+.btn span{
+position:absolute; 
+transform:translate(-50%,-50%);
+border-radius:100%;
+border:2px solid #80FF72;
+animation:animate 2s linear infinite;
+transition:all .2s;
+pointer-events:none;
+}
+
+@keyframes animate{
+ 0%{
+ width:0; 
+ height:0;
+ }100%{
+ width:350px;  
+ height:350px;
+ border-color:transparent;
+ }      
+}
